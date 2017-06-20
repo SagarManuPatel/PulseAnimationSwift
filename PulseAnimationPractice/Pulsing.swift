@@ -15,7 +15,7 @@ class Pulsing : CALayer {
     
     var initialPulseScale : Float = 0
     var nextPulseAfter : TimeInterval = 0
-    var animationDuration : TimeInterval = 1.5
+    var animationDuration : TimeInterval = 0.8
     var radius : CGFloat = 200
     var numberOfPulses : Float = Float.infinity
     

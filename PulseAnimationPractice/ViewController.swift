@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         let i = UIImageView()
         i.translatesAutoresizingMaskIntoConstraints = false
         i.image = #imageLiteral(resourceName: "omg")
-        i.layer.cornerRadius = 25
+        i.layer.cornerRadius = 50
         i.contentMode = .scaleAspectFill
         i.clipsToBounds = true
         i.isUserInteractionEnabled = true
@@ -32,13 +32,13 @@ class ViewController: UIViewController {
         
         image.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         image.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        image.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        image.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        image.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        image.widthAnchor.constraint(equalToConstant: 100).isActive = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func tapped(){
-        let pulse = Pulsing(numberOfPulses: 1, radius: 44, Position: image.center)
+        let pulse = Pulsing(numberOfPulses: 1, radius: 110, Position: image.center)
 //        pulse.animationDuration = 0.8
         self.view.layer.insertSublayer(pulse, below: image.layer)
     }
